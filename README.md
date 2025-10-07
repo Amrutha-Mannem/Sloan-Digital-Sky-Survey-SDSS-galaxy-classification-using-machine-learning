@@ -63,18 +63,6 @@ Boxplots for feature distribution and outliers
 
 🔹 Logistic Regression
 
-4. Evaluation Metrics
-
-Accuracy
-
-Precision
-
-Recall
-
-F1-Score
-
-Confusion Matrix
-
 <h2>💻 How to Run in Google Colab</h2>
 
 Open Google Colab
@@ -136,7 +124,7 @@ Imbalanced-learn Documentation
 
 This project is licensed under the MIT License – see the LICENSE file for details.
 
-👩‍💻 Developer
+<h2>👩‍💻 Developer</h2>
 
 Name: Amrutha Varshini Mannem<break>
 Email: varshinimannem32@gmail.com
