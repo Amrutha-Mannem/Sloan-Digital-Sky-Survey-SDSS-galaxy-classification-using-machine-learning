@@ -1,87 +1,92 @@
 # Sloan-Digital-Sky-Survey-SDSS-galaxy-classification-using-machine-learning
 Machine learning project for classifying galaxies from the Sloan Digital Sky Survey (SDSS) dataset. Includes data preprocessing, visualization, outlier handling, feature selection, and model training using algorithms like Random Forest and SVM for accurate galaxy type prediction.
-📖 Overview
+<h2>📖 Overview</h2>
 
 The SDSS Galaxy Classification project uses machine learning to classify galaxies based on their photometric and spectroscopic properties from the Sloan Digital Sky Survey (SDSS) dataset.
 
-The goal is to predict the subclass of a galaxy (e.g., STARFORMING, STARBURST, AGN) using numerical features such as u, g, r, i, z magnitudes. This project demonstrates data preprocessing, feature engineering, model training, and evaluation for astronomical data analysis.
+The goal is to predict the subclass of a galaxy (e.g., STARFORMING, STARBURST, AGN) using numerical features such as u, g, r, i, and z magnitudes.
 
-🛠️ Tech Stack
+This project demonstrates data preprocessing, feature engineering, model training, and evaluation for astronomical data analysis.
+
+<h2>🛠️ Tech Stack</h2>
 
 Language: Python
 Platform: Google Colab / Jupyter Notebook
 
 Libraries Used:
 
-numpy – Numerical computations
+🧮 numpy – Numerical computations
 
-pandas – Data cleaning and manipulation
+📊 pandas – Data manipulation
 
-matplotlib & seaborn – Data visualization
+🎨 matplotlib & seaborn – Data visualization
 
-scikit-learn – Machine learning models and evaluation metrics
+🤖 scikit-learn – Machine learning algorithms and metrics
 
-imblearn – SMOTE oversampling for imbalanced data
+⚖️ imblearn – SMOTE oversampling for imbalanced data
 
-pickle – Model saving and loading
+💾 pickle – Model serialization and saving
 
-📂 Dataset
+<h2>📂 Dataset</h2>
 
 Source: Sloan Digital Sky Survey (SDSS)
-File Used: sdss_100k_galaxy_form_burst.csv
+File: sdss_100k_galaxy_form_burst.csv
 
 Example Columns:
 
 objid	specobjid	class	subclass	u	g	r	i	z
 123	456	GALAXY	STARFORMING	18.9	17.5	16.8	16.5	16.4
-🧩 Features
+<h2>🧩 Features</h2>
+1. Data Preprocessing
 
-Data Preprocessing:
+Handle missing values and invalid entries (NaN, -9999)
 
-Handle missing values (NaN, -9999)
-
-Encode categorical labels (e.g., subclass)
+Encode categorical variables (e.g., subclass)
 
 Remove outliers using IQR method
 
-Normalize or scale numeric data
+Normalize and scale numeric columns
 
-Exploratory Data Analysis (EDA):
+2. Exploratory Data Analysis (EDA)
 
-Visualize subclass distribution (pie charts, barplots)
+Visualize galaxy subclass distribution
 
-Correlation heatmaps of numeric features
+Correlation heatmaps for numeric attributes
 
-Boxplots for feature spread and outliers
+Boxplots for feature distribution and outliers
 
-Model Training:
+3. Model Training
 
-Decision Tree Classifier 🌳
+🌳 Decision Tree Classifier
 
-Random Forest Classifier 🌲
+🌲 Random Forest Classifier
 
-Logistic Regression 🔹
+🔹 Logistic Regression
 
-Evaluation Metrics:
+4. Evaluation Metrics
 
 Accuracy
 
-Precision, Recall, and F1-Score
+Precision
+
+Recall
+
+F1-Score
 
 Confusion Matrix
 
-💻 How to Run in Google Colab
+<h2>💻 How to Run in Google Colab</h2>
 
 Open Google Colab
 .
 
-Upload the dataset CSV file (sdss_100k_galaxy_form_burst.csv).
+Upload the dataset file sdss_100k_galaxy_form_burst.csv.
 
-Open the notebook file sdss_galaxy_(1)_(3) (2).ipynb.
+Open the notebook sdss_galaxy_(1)_(3) (2).ipynb.
 
-Run all cells sequentially to preprocess data, train models, and view evaluation results.
+Run all cells sequentially to preprocess data, train models, and visualize results.
 
-Example code snippet to load data in Colab:
+Example Code Snippet:
 
 import pandas as pd
 
@@ -89,37 +94,37 @@ import pandas as pd
 from google.colab import files
 uploaded = files.upload()
 
-# Load CSV
+# Load CSV file
 data = pd.read_csv('sdss_100k_galaxy_form_burst.csv', delimiter=' ')
 data.head()
 
-📈 Project Workflow
+<h2>📈 Project Workflow</h2>
 
-Data Collection – Obtain galaxy data from SDSS.
+Data Collection – Gather SDSS galaxy data.
 
-Exploratory Data Analysis (EDA) – Visualize subclass distributions and relationships.
+Exploratory Data Analysis (EDA) – Visualize subclass distributions and trends.
 
-Data Preprocessing – Clean and encode data, handle missing values and outliers.
+Data Preprocessing – Clean, encode, and normalize data.
 
-Feature Selection & Engineering – Identify and use significant galaxy parameters.
+Feature Engineering – Select important numerical features.
 
-Model Training & Testing – Apply ML algorithms and evaluate their performance.
+Model Training & Testing – Train models and evaluate accuracy.
 
-Result Visualization – Display feature correlations, accuracy, and subclass distribution.
+Result Visualization – Display correlation heatmaps and classification performance.
 
-Model Saving – Save trained model with pickle for reuse.
+Model Saving – Store trained model using pickle.
 
-🔮 Future Enhancements
+<h2>🔮 Future Enhancements</h2>
 
-Integrate deep learning models (e.g., CNNs for image-based galaxy classification).
+Integrate deep learning (CNNs) for galaxy image classification
 
-Deploy the model as a web app using Streamlit or Flask.
+Deploy model as a Streamlit or Flask web app
 
-Add real-time SDSS API integration for live predictions.
+Add real-time SDSS API integration
 
-Implement feature importance analysis for interpretability.
+Perform feature importance analysis for interpretability
 
-📚 References
+<h2>📚 References</h2>
 
 Sloan Digital Sky Survey (SDSS)
 
@@ -127,11 +132,11 @@ Scikit-learn Documentation
 
 Imbalanced-learn Documentation
 
-📝 License
+<h2>📝 License</h2>
 
 This project is licensed under the MIT License – see the LICENSE file for details.
 
 👩‍💻 Developer
 
-Name: Amrutha Varshini Mannem
+Name: Amrutha Varshini Mannem<break>
 Email: varshinimannem32@gmail.com
